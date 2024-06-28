@@ -1,0 +1,23 @@
+# Убираем автоматическое экранирование ковычек(Будем делать в коде)
+php_flag magic_qoutea_gpc Off
+
+AddDefaultCharset utf-8
+
+# Чтобы сервер apache искаль только index.php чтобы он не искал index.htm и index.html(Строка не обязательна, но убирает лишнюю нагрузку с сервера)
+
+DirectoryIndex index.php
+
+# Включаем мод Rewrite
+RewriteEngine on
+
+# Если запрос пользователя не является файлом
+RewriteCond %(REQUEST_FILENAME) !-f
+
+# Если запрос пользователя не является дирректорией
+# RewriteCond %(REQUEST_FILENAME) !-d
+
+# То перенаправить пользователя на index.php
+RewriteRule ^(.*) index.php
+
+# Отключить вывод предупреждений
+php_value error_reporting "E_ALL & ~E_NOTICE"

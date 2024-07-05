@@ -1,7 +1,16 @@
 <?php 
 
-function print_arr($arr){
-    echo '<pre>';
-    print_r ($arr);
-    echo '</pre>';
+function print_arr($arrs){
+    $my_arr = [];
+    
+        foreach ($arrs as $arr=>$value){
+            echo '<pre>';
+            echo '\'' . $arr .'\''. ' => ' .'\''. $value .'\''. ',';
+            echo '</pre>';
+        
+    }
+
+    
+    
+    
 }

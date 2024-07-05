@@ -13,29 +13,33 @@ class Settings{
     // Массив маршрутов 
     private $routes = [
         'admin'=> [
-            'name' => 'admin',
+            'alias' => 'admin',
             'path' => 'core/admin/controller/',
             // изменять вид пути на пользовательский, красивый
-            'hrUrl' => false
+            'hrUrl' => false,
+            'routes' => [
+                'product'=> 'goods'
+            ]
         ],
         'settings' => [ 
             'path'=> 'core/base/settings/'
         ],
         'plugins' => [
             'path' =>'core/plugins/',
-            'hrUrl' => false
+            'hrUrl' => false,
+            'dir' => false
         ],
         'user' => [
-            'path' => 'core/user/controllers',
+            'path' => 'core/user/controller/',
             'hrUrl' => true,
             'routes' => [
-
+                'catalog' => 'site'
             ]
         ],
         'default' => [
             'controller' => 'indexController',
-            'inputMethod' => 'inputData',
-            'outputMethod' => 'outputData'
+            'inputMethod' => 'DefaultInputData',
+            'outputMethod' => 'DefaultOutputData'
         ]
     ];
 
@@ -90,13 +94,12 @@ class Settings{
 
         foreach($this as  $name => $item){
             $property = $class::get($name);
-// Если массивом является свойство текущего класса и массивом является свойство класса ShopSettings, 
+
             if(is_array($property) && is_array($item)){
-// то мы склеиваем эти массивы
                 $baseProperties[$name] = $this->arrayMergeRecursive($this->$name, $property);
                 
             }
-// Если запрашиваемого свойства нет в ShopSettings  то мы его берем из базового класса Settings
+
             if(!$property) $baseProperties[$name] = $this->$name;
         }
 

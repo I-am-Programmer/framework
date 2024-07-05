@@ -18,7 +18,7 @@ class ShopSettings{
     //     ]
     //     ];
 
-    private $templateArr = [
+    private $templaaateArr = [
         'text1'=>['name1'=>'value1'], 'name2', 'name3', 'name4',
         'textArea'=>['content']
     ];

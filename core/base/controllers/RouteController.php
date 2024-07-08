@@ -59,33 +59,25 @@ class RouteController{
     
         $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php'));
         if($path === PATH){
-
             $this->routes = Settings::get('routes');
-            // Проверяем, что настройки сайта записаны
             if(!$this->routes)throw new RouteException('Сайт находится на техническом обслуживании');
-
-            // Проверяем, начинается ли строка `$address_str` с админки
             if(strpos($address_str, $this->routes['admin']['alias']) === strlen(PATH)){
-
-
-
-
-
 
                 /* Админка */
                 $url = explode('/', substr($address_str, strlen(PATH . $this->routes['admin']['alias'])+1));
-
+        
+                //Подключение плагина
                 if($url[0] && is_dir($_SERVER['DOCUMENT_ROOT'] .  PATH . $this-> routes['plugins']['path'].$url[0])){
                     $plugin = array_shift($url);
                     $pluginSettings = $this->routes['settings']['path'] . ucfirst( $plugin . 'Settings');
                     
+                    
                     if(file_exists($_SERVER['DOCUMENT_ROOT'] . PATH . $pluginSettings . '.php')){
-                        //чтобы воспользоваться методом get нам необходимо заменить слеши на обратные 
-                        // склеиваем базовые настройки и настройки плагина
+                        
                         $pluginSettings = str_replace('/', '\\', $pluginSettings);
                         $this->routes=$pluginSettings::get('routes');
 
-                        // exit;
+                        
                     }
                     
                     $dir = $this->routes['plugins']['dir'] ? '/' .$this->routes['plugins']['dir'] . '/' : '/';
@@ -101,7 +93,6 @@ class RouteController{
                     
 
                 }else{
-                    // Работаем с маршрутами админки
 
                     $this->controller = $this-> routes['admin']['path'];
 
@@ -118,7 +109,7 @@ class RouteController{
                 $url = explode('/', substr($address_str, strlen(PATH)));
                 
                 $hrUrl = $this->routes['user']['hrUrl'];
-                // добавляем маршрут для юзера в переменную
+                
                 $this -> controller = $this->routes['user']['path'];
 
                 $route = 'user';
@@ -127,11 +118,12 @@ class RouteController{
 
 
 
-//передаем нужный и запрашиваемый маршрут      
-$this->createRoute($route, $url);
-
-                if(isset($url[1])&& $url[1]){
-                $count =count($url);
+            //разобрать     
+            $this->createRoute($route, $url);
+            $a=0;
+            //разобрать
+            if(isset($url[1])&& $url[1]){
+                $count = count($url);
                 $key = '';
 
                 if(!$hrUrl){
@@ -153,24 +145,23 @@ $this->createRoute($route, $url);
                 }
             }
             exit;
-
-    }else{
+        }else{
         try{
             throw new \Exception('Не корректная дирректория ссайта');
         }
         catch(\Exception $e){
             exit ($e->getMessage());
         }
-    }
+    }   
 }
     private function createRoute($var, $arr){
-         $route = [];
-
-         if(!empty($arr[0])){
-            //проверяем начинается ли наш запрос с существующего  контроллера (например catalog) в routes['user']['routes']
+        $route = [];
+        $a = $this->routes[$var]['routes'];
+        
+        if(!empty($arr[0])){
             if(isset($this->routes[$var]['routes'][$arr[0]])){
                
-                //передаем значение нашего catalog в виде: 0 => 'site';
+                
                 $route = explode('/', $this->routes[$var]['routes'][$arr[0]]);
 
                 $this->controller .= ucfirst($route[0] . 'Controller');
@@ -182,12 +173,7 @@ $this->createRoute($route, $url);
             $this->controller .= $this->routes['default']['controller'];
          }     
          
-        //  коммент эквивалентен строке ниже
-        //  if(isset($route[1]) && $route[1]){
-        //     $this->inputMethod = $route[1];
-        //  }else{
-        //     $this->routes['default']['inputMethod'];
-        //  }
+
          $this->inputMethod = isset($route[1]) && $route[1] ? $route[1] : $this->routes['default']['inputMethod'];
          $this->outputMethod =isset($route[2]) && $route[2] ? $route[2] : $this->routes['default']['outputMethod'];
 

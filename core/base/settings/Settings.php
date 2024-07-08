@@ -33,7 +33,7 @@ class Settings{
             'path' => 'core/user/controller/',
             'hrUrl' => true,
             'routes' => [
-                'catalog' => 'site'
+                'catalog' => 'site/first/second'
             ]
         ],
         'default' => [

@@ -2,7 +2,7 @@
 
 defined('VG_ACCESS') or die('Access deny');
 
-const TEMPLATE = '/templates/default';
+const TEMPLATE = 'templates/default/';
 const ADMIN_TEMPLATE = '/core/admin/views';
 
 // Для возможности принудительного перелогирования(Сбрасывания куки)

@@ -32,14 +32,13 @@ class Settings{
             'path' => 'core/user/controller/',
             'hrUrl' => true,
             'routes' => [
-                'aliase' => 'info/getAliace',
-                'clube' => '/info/getClub'
+                'site' => 'index/hello'
             ]
         ],
         'default' => [
             'controller' => 'indexController',
-            'inputMethod' => 'DefaultInputData',
-            'outputMethod' => 'DefaultOutputData'
+            'inputMethod' => 'InputData',
+            'outputMethod' => 'OutputData'
         ]
     ];
 

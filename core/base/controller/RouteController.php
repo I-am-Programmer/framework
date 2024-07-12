@@ -122,10 +122,10 @@ class RouteController extends BaseController {
 
 
 
-            //разобрать     
+                
             $this->createRoute($route, $url);
-            $a=0;
-            //разобрать
+            
+            
             if(isset($url[1])&& $url[1]){
                 $count = count($url);
                 $key = '';
@@ -186,5 +186,7 @@ class RouteController extends BaseController {
 
          return;
     }
+
+   
 
 }

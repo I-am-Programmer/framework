@@ -25,12 +25,12 @@ require_once 'libraries/functions.php';
 // подключающий пространство имен, с помощью функции autoloadMainClasses 
 // в internal_settings 
 use core\base\exceptions\RouteException;  
-use core\base\controllers\RouteController;  
+use core\base\controller\RouteController;  
 
 
 // Для отлавливания исключения, нам необходимо создать соответствующий класс дочерний от \Exception
 try{
-   RouteController::getInstance();
+   RouteController::getInstance()->route();
    
 }
 catch(RouteException $e){

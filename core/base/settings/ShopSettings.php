@@ -6,7 +6,17 @@ use core\base\settings\Settings;
 
 // Файлы плагинов называются с большой буквы, начинается с названия плагина
 class ShopSettings{
+    private $routes = [
     
+        'plugins' => [
+            'path' =>'core/plugins/',
+            'hrUrl' => false,
+            'dir' => 'false',
+            routes => [
+                'product' => 'goods'
+            ]
+            ]
+        ];
 
     static private $_instance;
 //Ссылка на объект класса Settings

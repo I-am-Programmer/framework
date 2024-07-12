@@ -14,11 +14,10 @@ class Settings{
     private $routes = [
         'admin'=> [
             'alias' => 'admin',
-            'path' => 'core/admin/controller/',
-            // изменять вид пути на пользовательский, красивый
+            'path' => 'core/admin/',
             'hrUrl' => false,
             'routes' => [
-                'product'=> 'goods'
+                'product'=> 'goods/getGoods/sale'
             ]
         ],
         'settings' => [ 
@@ -33,7 +32,8 @@ class Settings{
             'path' => 'core/user/controller/',
             'hrUrl' => true,
             'routes' => [
-                'catalog' => 'site/first/second'
+                'aliase' => 'info/getAliace',
+                'clube' => '/info/getClub'
             ]
         ],
         'default' => [

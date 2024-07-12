@@ -1,6 +1,6 @@
 <?php 
 
-namespace core\base\controllers;
+namespace core\base\controller;
 
 use core\base\exceptions\RouteException;
 use core\base\settings\Test;
@@ -11,13 +11,14 @@ use core\base\settings\ShopSettings;
 
 // Модель singleton используется для использование только одного объекта класса.
 // При попытке создать объект повторно будет ссылаться на уже созданный объект 
-class RouteController{
+class RouteController extends BaseController {
     
     static private $_instance;
     protected $routes;
-    protected $inputMethod;
-    protected $outputMethod;
-    protected $parametrs;
+
+    
+
+
     protected $redirect;
     // protected $parametrs;
 
@@ -61,7 +62,10 @@ class RouteController{
         if($path === PATH){
             $this->routes = Settings::get('routes');
             if(!$this->routes)throw new RouteException('Сайт находится на техническом обслуживании');
-            if(strpos($address_str, $this->routes['admin']['alias']) === strlen(PATH)){
+            $url = explode('/', substr($address_str, strlen(PATH)));
+
+            if($url[0] && $url[0] === $this->routes['admin']['alias']){
+                $plugin =  array_shift($url);
 
                 /* Админка */
                 $url = explode('/', substr($address_str, strlen(PATH . $this->routes['admin']['alias'])+1));
@@ -144,16 +148,19 @@ class RouteController{
                     }
                 }
             }
-            exit;
+
+            
+
         }else{
-        try{
-            throw new \Exception('Не корректная дирректория ссайта');
-        }
-        catch(\Exception $e){
-            exit ($e->getMessage());
-        }
-    }   
-}
+            try{
+                throw new \Exception('Не корректная дирректория ссайта');
+            }
+            catch(\Exception $e){
+                exit ($e->getMessage());
+            }
+        }   
+    }
+
     private function createRoute($var, $arr){
         $route = [];
         $a = $this->routes[$var]['routes'];

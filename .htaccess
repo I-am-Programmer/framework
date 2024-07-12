@@ -19,5 +19,4 @@ RewriteCond %(REQUEST_FILENAME) !-f
 # То перенаправить пользователя на index.php
 RewriteRule ^(.*) index.php
 
-# Отключить вывод предупреждений
-php_value error_reporting "E_ALL & ~E_NOTICE"
+

@@ -6,17 +6,32 @@ use core\base\controller\BaseController;
 
 class IndexController extends BaseController
 {   
-    protected function hello(){
-        $template = $this->render(false, ['name'=> 'Masha']);
 
-        exit($template);
+
+    protected $name;
+   
+
+    protected function InputData(){
+        // подключение стилей css
+        $this->init();
+        exit();
+
     }
 
-     public function inputdata(){
-         return;
-     }
+
+
+
+
+
+
+
+
+
+     
 
     public function outputdata(){
-        return;
+            $vars = func_get_arg(0);
+            //выводим информацию из буфера обмена 
+            $this->page = $this->render(TEMPLATE . 'template', $vars);
     }
 }

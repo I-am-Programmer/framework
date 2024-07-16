@@ -14,7 +14,7 @@ class Settings{
     private $routes = [
         'admin'=> [
             'alias' => 'admin',
-            'path' => 'core/admin/',
+            'path' => 'core/admin/controller/',
             'hrUrl' => false,
             'routes' => [
                 'product'=> 'goods/getGoods/sale'

@@ -33,7 +33,8 @@ class RouteController extends BaseController {
 
     
 
-
+    // проверяем создан ли объект, если объект создан то 
+    // новый не создаем новый объект а обращаемся к существующему
     static public function getInstance(){
         if(self::$_instance instanceof self){
         return self::$_instance;
@@ -49,25 +50,27 @@ class RouteController extends BaseController {
 
     private function __construct()
     {
-       
+        
         $address_str = $_SERVER['REQUEST_URI'];
         $server = $_SERVER;
-        
+        //если запрос заканчивается на / делаем запись в redirect
         if((strrpos($address_str, '/') === strlen($address_str) -1) && (strrpos($address_str, '/') !== 0)){
                   
             $this->redirect(rtrim($address_str, '/'), 301);
         }
-    
+        //проверяем что фреймворк расположен в нужной папке === константе PATH// Иначе вызываем исключение
         $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php'));
         if($path === PATH){
             $this->routes = Settings::get('routes');
             if(!$this->routes)throw new RouteException('Сайт находится на техническом обслуживании');
+            //разбиваем полученную строку на массив
             $url = explode('/', substr($address_str, strlen(PATH)));
 
             if($url[0] && $url[0] === $this->routes['admin']['alias']){
                 $plugin =  array_shift($url);
 
                 /* Админка */
+                ////разбиваем полученную строку на массив вырезая admin
                 $url = explode('/', substr($address_str, strlen(PATH . $this->routes['admin']['alias'])+1));
         
                 //Подключение плагина
@@ -109,8 +112,7 @@ class RouteController extends BaseController {
 
                 //конец Админки
 
-            }else{
-                $url = explode('/', substr($address_str, strlen(PATH)));
+            }else{              
                 
                 $hrUrl = $this->routes['user']['hrUrl'];
                 

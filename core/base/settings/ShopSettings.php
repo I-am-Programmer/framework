@@ -3,23 +3,26 @@
 
 namespace core\base\settings;
 use core\base\settings\Settings;
+use core\base\controller\Singletone;
 
-// Файлы плагинов называются с большой буквы, начинается с названия плагина
+//скрываем проблемы связанные с динамическим свойствами
+#[\AllowDynamicProperties]
 class ShopSettings{
+    use Singletone;
+
     private $routes = [
     
         'plugins' => [
             'path' =>'core/plugins/',
             'hrUrl' => false,
-            'dir' => 'false',
-            routes => [
-                'product' => 'goods'
+            'dir' => false,
+            'routes' => [
+                
             ]
-            ]
+        ]
         ];
 
-    static private $_instance;
-//Ссылка на объект класса Settings
+    
     private $baseSettings;
 
     // private $routes = [
@@ -35,27 +38,22 @@ class ShopSettings{
     
 // С помощью метода instance передаем информацию о свойстве 
     static public function get ($property){
-        return self::instance()->$property;
+        return self::getInstance()->$property;
     }
-// Ловим несуществующие свойства, для избежания ошибки 
+// Ловим несуществующие свойства, для избежания ошибки
     public function __get($property){
         return $this->$property = null;
  }
-
-
  
-
 // Возвращает свойство объекта - созданного
 // Если объект не создан, создает
-    static public function instance(){
+    static private function getInstance(){
         if(self::$_instance instanceof self){
             return self::$_instance;
         }
 
-        self::$_instance = new self;
 // В свойство baseSettings помещаем ссылку на объект класса Settings, если объект еще не существует то он создается
-        self::$_instance->baseSettings = Settings::instance();
-// В переменную baseProperties записываем результат работы меотода
+        self::instance()->baseSettings = Settings::instance();
 // Из Объекта в baseSettings, вызываем clueProprties и передаем ему ИМЯ текущего класса
         $baseProperties = self::$_instance->baseSettings->clueProprties(get_class());
         self::$_instance->setProperty($baseProperties);
@@ -69,12 +67,5 @@ class ShopSettings{
                 $this->$name = $property;
             }
         }
-    }
-
-    private function __construct(){
-
-    }
-    private function __clone(){
-
     }
 }

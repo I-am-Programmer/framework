@@ -1,0 +1,123 @@
+Fault: 25-07-2024 14:13:04 - Ошибка в SQL запросе: SELECT name1 FROM articles - 1054 Unknown column 'name1' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 17:11:29 - Ошибка в SQL запросе: SELECT id, name FROM products WHERE parent_id = 
+                LEFT JOIN category ON product.parent_id = category.id
+                WHERE category.name ='Apple' - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN category ON product.parent_id = category.id
+                WHERE catego...' at line 2
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 17:13:05 - Ошибка в SQL запросе: SELECT id, name FROM product WHERE parent_id = 
+                LEFT JOIN category ON product.parent_id = category.id
+                WHERE category.name ='Apple' - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN category ON product.parent_id = category.id
+                WHERE catego...' at line 2
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 17:13:48 - Ошибка в SQL запросе: SELECT id, name FROM product WHERE parent_id = 
+                LEFT JOIN category ON product.parent_id = category.id
+                WHERE category.name ='Apple' - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN category ON product.parent_id = category.id
+                WHERE catego...' at line 2
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 17:14:42 - Ошибка в SQL запросе: SELECT id, name FROM product
+                LEFT JOIN category ON product.parent_id = category.id
+                WHERE category.name ='Apple' - 1052 Column 'id' in field list is ambiguous
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 17:16:02 - Ошибка в SQL запросе: SELECT id, name FROM product
+                LEFT JOIN category ON product.parent_id = category.id
+                WHERE category.id = 1 - 1052 Column 'id' in field list is ambiguous
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 17:17:08 - Ошибка в SQL запросе: SELECT id, name FROM product
+                LEFT JOIN category ON product.parent_id = category.id
+                WHERE category.id = 1 - 1052 Column 'id' in field list is ambiguous
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 18:56:20 - Ошибка в SQL запросе: SELECT teachers.id, teachers.name, students.id as students_id, sudents.name as student_name
+                    FROM teachers
+                    LEFT JOIN teachers_students ON teachers.id = teachers_students.id
+                    LEFT JOIN students ON teachers_students.id = students.id
+                     - 1054 Unknown column 'sudents.name' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 18:56:53 - Ошибка в SQL запросе: SELECT teachers.id, teachers.name, students.id as students_id, students.name as student_name
+                    FROM teachers
+                    LEFT JOIN teachers_students ON teachers.id = teachers_students.id
+                    LEFT JOIN students ON teachers_students.id = students.id
+                     - 1054 Unknown column 'teachers_students.id' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 18:57:30 - Ошибка в SQL запросе: SELECT teachers.id, teachers.name, students.id as students_id, students.name as student_name
+                    FROM teachers
+                    LEFT JOIN teachers_students ON teachers.id = teachers_students.id
+                    LEFT JOIN students ON teachers_students.student = students.id
+                     - 1054 Unknown column 'teachers_students.id' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 18:57:38 - Ошибка в SQL запросе: SELECT teachers.id, teachers.name, students.id as students_id, students.name as student_name
+                    FROM teachers
+                    LEFT JOIN teachers_students ON teachers.id = teachers_students.id
+                    LEFT JOIN students ON teachers_students.student = students.id
+                     - 1054 Unknown column 'teachers_students.id' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 25-07-2024 18:58:08 - Ошибка в SQL запросе: SELECT teachers.id, teachers.name, students.id as students_id, students.name as student_name
+                    FROM teachers
+                    LEFT JOIN teachers_students ON teachers.id = teachers_students.teachers
+                    LEFT JOIN students ON teachers_students.student = students.id
+                     - 1054 Unknown column 'teachers_students.student' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 08-08-2024 16:36:53 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN (Olya, Sveta) OR teachers.surname LIKE 'Sergeevna%' AND teachers.secondname <>'Rodionova' AND teachers.car ='Porshe'  teachers.name DESC  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'teachers.name DESC' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 10-08-2024 17:53:35 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.0 IN ('SELECT')  ORDER BY teachers.fio DESC,teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 10-08-2024 17:54:29 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers   ORDER BY teachers.fio DESC,teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 11-08-2024 10:59:24 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('Olya','Sveta','Masha') OR teachers.surname LIKE 'Sergeevna%' AND teachers.secondname <>'Rodionova' AND teachers.car ='Porshe'  ORDER BY teachers.fio DESC,teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 11-08-2024 11:03:51 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('Olya','Sveta','Masha') OR teachers.surname LIKE 'Sergeevna%' AND teachers.secondname <>'Rodionova' AND teachers.car ='Porshe'  ORDER BY teachers.fio DESC,teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 12-08-2024 10:00:54 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('Olya','Sveta','Masha') OR teachers.surname LIKE 'Sergeevna%' AND teachers.secondname <>'Rodionova' AND teachers.car ='Porshe'  ORDER BY teachers.fio DESC,teachers.name DESC LIMIT 1 - 1054 Unknown column 'teachers.surname' in 'where clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 14-08-2024 10:44:54 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.id WHERE teachers.name IN ('Olya','Sveta','Masha') OR teachers.surname LIKE 'Sergeevna%' AND teachers.secondname <>'Rodionova' AND teachers.car ='Porshe' AND join_table1.name ='Sasha'  ORDER BY teachers.fio DESC,teachers.name DESC LIMIT 1 - 1146 Table 'im.join_table1' doesn't exist
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 14-08-2024 11:36:37 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('Olya','Sveta','Masha') OR teachers.surname <>(SELECT name FROM students WHERE id = 1)  ORDER BY teachers.fio DESC,teachers.name DESC LIMIT 1 - 1054 Unknown column 'teachers.surname' in 'where clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 14-08-2024 12:19:26 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name ='Masha' AND teachers.surname =(SELECT name FROM students WHERE id = 1)  ORDER BY teachers.fio DESC,teachers.name DESC LIMIT 1 - 1054 Unknown column 'teachers.surname' in 'where clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+
+Fault: 14-08-2024 12:19:40 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name ='Masha'  ORDER BY teachers.fio DESC,teachers.name DESC LIMIT 1 - 1054 Unknown column 'teachers.fio' in 'order clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 30
+

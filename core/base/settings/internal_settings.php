@@ -3,8 +3,12 @@
 defined('VG_ACCESS') or die('Access deny');
 
 const TEMPLATE = 'templates/default/';
-const ADMIN_TEMPLATE = '/core/admin/views';
+const ADMIN_TEMPLATE = 'core/admin/views/';
 
+
+
+
+date_default_timezone_set("Europe/Moscow");
 // Для возможности принудительного перелогирования(Сбрасывания куки)
 const COOKIE_VERSION = '1.0.0';
 // Ключ шифрования для coocie файлов

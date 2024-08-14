@@ -11,11 +11,19 @@ class IndexController extends BaseController
     protected $name;
    
 
-    protected function InputData(){
-        // подключение стилей css
-        $this->init();
-        exit();
 
+    protected function InputData(){
+        $this->init();
+        exit('i am User');
+    }
+
+
+
+
+    protected function OutputData(){
+        $items = func_get_arg(0);
+        return $this->render('', $items);
+        
     }
 
 
@@ -29,9 +37,5 @@ class IndexController extends BaseController
 
      
 
-    public function outputdata(){
-            $vars = func_get_arg(0);
-            //выводим информацию из буфера обмена 
-            $this->page = $this->render(TEMPLATE . 'template', $vars);
-    }
+   
 }

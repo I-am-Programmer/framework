@@ -3,9 +3,8 @@
 namespace core\base\controller;
 
 use core\base\exceptions\RouteException;
-use core\base\settings\Test;
 use core\base\settings\Settings;
-use core\base\settings\ShopSettings;
+use core\base\controller\Singletone;
 
 
 
@@ -13,47 +12,16 @@ use core\base\settings\ShopSettings;
 // При попытке создать объект повторно будет ссылаться на уже созданный объект 
 class RouteController extends BaseController {
     
-    static private $_instance;
+    use Singletone;
+    
     protected $routes;
-
-    
-
-
-    protected $redirect;
-    // protected $parametrs;
-
-   
-
-
-
-
-    private function __clone()
-    {
-    }
-
-    
-
-    // проверяем создан ли объект, если объект создан то 
-    // новый не создаем новый объект а обращаемся к существующему
-    static public function getInstance(){
-        if(self::$_instance instanceof self){
-        return self::$_instance;
-        }
-        return self::$_instance = new self;
-    }
-
-
-
-
-
-
 
     private function __construct()
     {
         
         $address_str = $_SERVER['REQUEST_URI'];
-        $server = $_SERVER;
-        //если запрос заканчивается на / делаем запись в redirect
+        
+        //если запрос заканчивается на / вызываем метод redirect
         if((strrpos($address_str, '/') === strlen($address_str) -1) && (strrpos($address_str, '/') !== 0)){
                   
             $this->redirect(rtrim($address_str, '/'), 301);
@@ -62,7 +30,7 @@ class RouteController extends BaseController {
         $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php'));
         if($path === PATH){
             $this->routes = Settings::get('routes');
-            if(!$this->routes)throw new RouteException('Сайт находится на техническом обслуживании');
+            if(!$this->routes)throw new RouteException('Отсутствуют маршруты в базовых настройках');
             //разбиваем полученную строку на массив
             $url = explode('/', substr($address_str, strlen(PATH)));
 
@@ -82,9 +50,7 @@ class RouteController extends BaseController {
                     if(file_exists($_SERVER['DOCUMENT_ROOT'] . PATH . $pluginSettings . '.php')){
                         
                         $pluginSettings = str_replace('/', '\\', $pluginSettings);
-                        $this->routes=$pluginSettings::get('routes');
-
-                        
+                        $this->routes=$pluginSettings::get('routes');   
                     }
                     
                     $dir = $this->routes['plugins']['dir'] ? '/' .$this->routes['plugins']['dir'] . '/' : '/';
@@ -154,18 +120,12 @@ class RouteController extends BaseController {
             
 
         }else{
-            try{
-                throw new \Exception('Не корректная дирректория ссайта');
-            }
-            catch(\Exception $e){
-                exit ($e->getMessage());
-            }
+            throw new RouteException('Не корректная дирректория сайта', 1);
         }   
     }
 
     private function createRoute($var, $arr){
         $route = [];
-        $a = $this->routes[$var]['routes'];
         
         if(!empty($arr[0])){
             if(isset($this->routes[$var]['routes'][$arr[0]])){

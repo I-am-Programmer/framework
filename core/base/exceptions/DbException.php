@@ -6,13 +6,13 @@ use core\base\controller\BaseMethods;
 
 // Указываем что родительский класс Exception необходимо искать в глобальном пространстве имен
 // т.к выше мы присвоили классу RouteException другое пространство имен
-class RouteException extends \Exception
+class DbException extends \Exception
 {
     use BaseMethods;
 
     protected $messages;
 
-public function __construct($message ='',$code = 0)
+public function __construct($message ='', $code = 0)
 {
     //вызвать метод родительского класса \Exception, в случа если мы не описали сообщение для
     parent::__construct($message,$code);
@@ -27,7 +27,7 @@ public function __construct($message ='',$code = 0)
     // в переменную message записываем значение messages. В случае если значение существует
     // if(isset($this->messages[$this->getCode()])) $this->message = $this->messages[$this->getCode()];
 
-    $this->writeLog($error);
+    $this->writeLog($error, 'db_log.txt');
 }   
 
 }

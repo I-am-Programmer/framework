@@ -2,10 +2,12 @@
 
 namespace core\base\settings;
 
+use core\base\controller\Singletone;
 
-class Settings{
-
-    static private $_instance;
+class Settings
+{
+    use Singletone;
+    
     
     private $templateArr = [
         'text'=>['name1'=>1]
@@ -20,6 +22,7 @@ class Settings{
                 'product'=> 'goods/getGoods/sale'
             ]
         ],
+
         'settings' => [ 
             'path'=> 'core/base/settings/'
         ],
@@ -39,7 +42,9 @@ class Settings{
             'controller' => 'indexController',
             'inputMethod' => 'InputData',
             'outputMethod' => 'OutputData'
-        ]
+        ],
+
+        'p' => [1,2,3] 
     ];
 
 
@@ -50,30 +55,18 @@ class Settings{
 
 
     // Констуктор и клон помогают с приватным доступом позволяют избежать обращений к данному классу и создания копии из вне
-    private function __construct(){
-
-    }
-    private function __clone(){
-
-    }
+    
 
     static public function get ($property){
         return self::instance()->$property;
 
     }
-    public function __get($property){
-        return $this->$property = null;
- }
+//     public function __get($property){
+//         return $this->$property = null;
+//  }
 
 // Объявление свойств и методов класса статическими позволяет обращаться к ним без создания экземпляра класса. 
-    static public function instance(){
-        // self:: - ключевое свойство для обращения к статическим свойствам и методам внутри себя самого или к константам
-        if(self::$_instance instanceof self){
-            return self::$_instance;
-        }
-        // new self() или new self - создание экземпляра класса внутри себя самого
-        return self::$_instance = new self;
-    }
+    
 
 
 

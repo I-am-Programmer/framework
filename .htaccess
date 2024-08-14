@@ -12,6 +12,7 @@ RewriteEngine on
 
 # Если запрос пользователя не является файлом
 RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !favicon.ico
 
 # Если запрос пользователя не является дирректорией
 # RewriteCond %(REQUEST_FILENAME) !-d

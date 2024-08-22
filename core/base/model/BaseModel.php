@@ -24,7 +24,7 @@ class BaseModel extends BaseModelMethods{
 
 
     // string $crud= c - CREATE/ r - SELECT / u - UPDATE / d - DELETE  
-    final public function query($query, $crud ='r', $retutn_id = false){
+    final public function query($query, $crud ='r', $return_id = false){
         try{
                 $result = $this->db->query($query);
 
@@ -52,17 +52,26 @@ class BaseModel extends BaseModelMethods{
 
                 break;
             case 'c':
-
-                if($return_id) return $this->db->insert_id;
-
-                return true;
+                if(isset($return_id)&& ($return_id)) return $this->db->insert_id;
+                exit ($query);
+                // return true;
+                break;
+                
+            case 'u':
+                exit ($query);
+                // return true;
                 break;
 
             default:
                 return true;
                 break;
 
+            
+
+            
+
         }
+        
         
     }
     // $res = $db->read($table,[
@@ -117,12 +126,109 @@ class BaseModel extends BaseModelMethods{
 
         $fields = rtrim($fields, ',');
 
-        $limit = $set['limit'] ? 'LIMIT ' .$set['limit'] : '';
+        $limit = isset($set['limit']) && $set['limit'] ? 'LIMIT ' .$set['limit'] : '';
         //Формирование запроса
         $query = "SELECT $fields FROM $table $join $where $order $limit";
         return $this->query($query);
     }
 
+    /**
+     * @param $table - таблица для вставки данных
+     * @param array $set - массив параметров:
+     * fields => [поле => значение]; - если не указан, то обрабатывается $_POST[поле => значение]
+     * разрешена передача NOW() в качестве MySql функции обычной строкой
+     * files => [поле => значение]; - можно подать массив вида [поле => [массив значений]]. Для хранения файлов изображений
+     * except => ['исключение 1', 'исключение 2'] - исключает данные элементы массива из добавленных в запрос(работает только с необязательными полями)
+     * return_id => true | false - возвращать или нет идентификатор вставленной записи
+     * 
+     * 
+     *@return mixed
+     */
+    final public function create($table, $set = []){
+        //проверяем какие поля пришли, если поля нет выставляем false
+        $set['fields'] = isset($set['fields'])&&is_array($set['fields']) && !empty($set['fields'])
+        ? $set['fields']: $_POST;
+        $set['files'] = isset($set['files'])&&is_array($set['files']) && !empty($set['files'])
+        ? $set['files']: false;
+
+        if(!$set['fields'] && !$set['files']) return false;
+
+        $set['return_id'] = isset($set['return_id'])&& $set['return_id'] ? true : false;
+        $set['except'] = isset($set['except']) && is_array($set['except']) && !empty($set['except'])? $set['except']:false;
+
+        //передаем параметры методу createInsert(лежащему в BaseModelMethods), для правильного формирования полей и значений 
+        $insert_arr = $this->createInsert($set['fields'], $set['files'], $set['except']);
+        if($insert_arr){
+            $query = "INSERT INTO $table ({$insert_arr['fields']}) VALUES ({$insert_arr['values']})";
+            // exit($this->query($query,'c',$set['return_id']));
+            return $this->query($query,'c',$set['return_id']);
+        }
+        return false;
+        
+    }
+    // all_rows - использкется в значении true для перезаписи всехстолбцов в таблице
+    // fields => [поле => значение]; - если не указан, то обрабатывается $_POST[поле => значение]
+    // files => [поле => значение]; - можно подать массив вида [поле => [массив значений]]. Для хранения файлов изображений
+    // except => ['исключение 1', 'исключение 2'] - исключает данные элементы массива из добавленных в запрос(работает только с необязательными полями)
+    // 'where' => ['id'=> 43] - для изменения конкретных строк
+
+    final public function update($table, $set = []){
+        //если не передаем значение в $set['fields] то берем значение из $_POST
+        $set['fields'] = isset($set['fields'])&&is_array($set['fields']) && !empty($set['fields'])
+        ? $set['fields']: $_POST;
+        $set['files'] = isset($set['files'])&&is_array($set['files']) && !empty($set['files'])
+        ? $set['files']: false;
+
+        //если пришло хоть что то $set['fields'] или $set['fields'] или значение в $_POST продолжаем 
+        if(!$set['fields'] && !$set['files']) return false;
+
+        
+        $set['except'] = isset($set['except']) && is_array($set['except']) && !empty($set['except'])? $set['except']:false;
+
+       
+        // Изменение записи в определенных строках можно записать в двух видах. Пример:
+        // 'fields' =>'id'=>44 или 'where' => ['id'=> 44]
+        // для нескольких id использеем массив типа 'where' => ['id'=> [43, 44]]
+        if(!isset($set['all_rows']) || !$set['all_rows']){
+            //
+            if(isset($set['where']) && $set['where']){
+                $where = $this->createWhere($set);
+            }else{
+                $columns = $this->showColumns($table);
+
+                if(!$columns) return false;
+                //Проверяем что передали - Первичный ключ
+                if($columns['id_row'] && $set['fields'][$columns['id_row']]){
+                    //создаем строку вида "WHERE id=47"
+                    $where = 'WHERE ' . $columns['id_row'] . '=' . $set['fields'][$columns['id_row']];
+                    // Удаляем переменную так как уже добавили ее в $where
+                    // Если мы этого не сделаем id попадет в список изменений. Пример
+                    // "UPDATE teachers SET gallery_img='Masha.jpg',id='47',id='47' WHERE id=47"
+                    unset($set['fields'][$columns['id_row']]);
+                }
+            }
+        }
+        //$update - изменения: Пример:
+        //$update ="name='Dima',content='Coddddddntent_Dima',gallery_img='[\"dima.jpg\"]',img='[\"Main_Dima.jpg\"]',"
+        $update = $this->createUpdate($set['fields'], $set['files'], $set['except']);
+        $query = "UPDATE $table SET $update $where";
+        return $this->query($query, 'u');
+    }
     
-  
+    //$columns => id_row = "id" хранится наименования первичного ключа "id" в нашей таблице
+    final public function showColumns($table){
+
+        $query = "SHOW COLUMNS FROM $table";
+        $res =$this->query($query);
+
+        $columns = [];
+
+        if($res){
+        foreach($res as $row){
+            $columns[$row['Field']] = $row;
+            if($row['Key']=== 'PRI') $columns['id_row'] = $row['Field'];
+            }
+        }
+        return $columns;
+    }
 }

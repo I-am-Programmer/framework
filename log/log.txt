@@ -230,3 +230,59 @@ Stack trace:
 file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
 In Line 41
 
+Fault: 16-08-2024 17:37:34 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 16-08-2024 17:37:34 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 21-08-2024 11:48:50 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 21-08-2024 11:48:50 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 21-08-2024 11:48:50 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 21-08-2024 11:48:50 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 21-08-2024 17:28:22 - ReflectionException: Class "core\user\controller\Favicon.icoController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+

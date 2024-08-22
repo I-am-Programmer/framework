@@ -13,39 +13,26 @@ class IndexController extends BaseController
         
         $db = Model::instance();
 
-        $table = 'teachers';
-        $res = $db->read($table,[
-            'fields' => ['id', 'name'],
-            'operand' => ['%LIKE%','<>'],
-            // 'condition' => ['OR', 'AND'],
-            'order' => ['name'],
-            'order_direction' => ['DESC'],
-            'limit' => '1',
-            'join'=> [
-                'join_table1'=>[
-                    'table'=> 'join_table1',
-                    'fields'=> ['id AS j_id', 'name AS j_name'],
-                    'type' => 'left',
 
-                    'operand' => ['='],
-                    'condition' => ['OR'],
-                    //признак присоеднинения
-                    'on' =>[
-                        'table' => 'teachers',
-                        'fields' => ['id', 'parent_id']
-                    ]
-                    ],
-                    [
-                    'table'=> 'join_table2',
-                    'fields'=> ['id AS j2_id', 'name2 AS j2_name'],
-                    'type' => 'left',
-                    'where' => ['name'=>'Sasha'],
-                        'operand' => ['='],
-                        'condition' => ['OR'],
-                    'on' =>['id', 'parent_id']
-                    ]
-                ]
-            ]);
+        $table = 'teachers';
+
+        $files['gallery_img'] = ["olya.jpg"];
+        $files['img'] = ["Main_Olya.jpg"];
+        
+        
+        $res = $db->update($table, [
+            // 'all_rows' => ['no'],
+            'fields' => ['name' =>'ddddd', 'content' => 'CoddddddntentOlya'],
+            'files' => $files,
+            
+            'where' => ['id'=> [43, 44]],
+            'operand' => ['IN']
+        ]);
+
+        // exit('id=' . $res['id'] . ' Name= ' .$res['name']);
+
+
+            
 
         exit('I am admin panel');
     }

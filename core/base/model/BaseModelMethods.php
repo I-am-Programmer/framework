@@ -3,8 +3,9 @@
 
 namespace core\base\model;
 
-
+//формируем поля типа table.id,table.name
 abstract class BaseModelMethods{
+    protected $sqlFunc = ['NOW()'];
     protected function createFields($set, $table= false){
         $set['fields'] = (isset($set['fields']) && is_array($set['fields']) 
         && !empty($set['fields'])) 
@@ -21,10 +22,10 @@ abstract class BaseModelMethods{
 
         return $fields;
     }
-    protected function createOrder($set, $table=false,){
-        
-        $table = $table ? $table . '.' :'';
 
+    //ORDER BY table.name DESC
+    protected function createOrder($set, $table=false,){
+        $table = $table ? $table . '.' :'';
         $order_by = '';
         
         if(isset($set['order']) && is_array($set['order'])&& !empty($set['order'])){
@@ -227,5 +228,85 @@ abstract class BaseModelMethods{
         }
         return compact('fields', 'join', 'where');
     }
+    protected function createInsert($fields, $files, $except){
+        
+        $insert_arr = [];
+
+        if($fields){
+            
+            foreach($fields as $row=>$value){
+                //если в переданном массиве except есть поле $row то пропускаем его
+                if($except && in_array($row, $except))continue;
+                $insert_arr['fields'] = isset($insert_arr['fields']) ? $insert_arr['fields'] . $row . ',' : $row . ',';
+
+                //если в $fields - NOW(), то не ставим кавычки и не экранируем символы
+                if(in_array($value, $this->sqlFunc)){
+                    // isset($insert_arr['values']) ? $insert_arr['values'] .= $value . ',' : $insert_arr['values'] = $value . ',';
+                    $insert_arr['values'] = isset($insert_arr['values'])? $insert_arr['values'] .$row . ',': $row . ',';
+
+                }else{
+                    $insert_arr['values'] = isset($insert_arr['values'])? $insert_arr['values'] . "'".addslashes($value) . "',": "'".addslashes($value) . "',";
+                    // isset($insert_arr['values']) ? $insert_arr['values'] .= "'".addslashes($value) . "'," : $insert_arr['values'] = "'".addslashes($value) . "',";
+
+                }
+            }
+        }
+        
+        if(isset($files)&&$files){
+            //$row - название поля/ $file - значение
+            foreach($files as $row=>$file){
+                $insert_arr['fields'] = isset($insert_arr['fields']) ? $insert_arr['fields'] . $row . ',' : $row . ',';
+                // $insert_arr['fields'] .= $row . ',';
+                
+                
+                //для галереи изображений используем формат JSON, для хранения массива в базе данных 
+                if(is_array($file)) {
+                    $insert_arr['values'] = isset($insert_arr['values'])?$insert_arr['values']. "'". addslashes(json_encode($file))."',":"'". addslashes(json_encode($file))."',";
+                    // $insert_arr['values'] .= "'". addslashes(json_encode($file))."',";
+                }
+                // если у нас строка, то записываем в запрос как есть добавляя кавычки, запятую и экранируя символы 
+                else{ 
+                    $insert_arr['values'] = isset($insert_arr['values'])? $insert_arr['values']."'" . addslashes($file) . "',": "'" . addslashes($file) . "',";;
+                    // $insert_arr['values'] .= "'" . addslashes($file) . "',";
+                }
+            }
+           
+        }
+        // для каждого ключа $insert_arr - обрезаем конечную запятую
+        foreach($insert_arr as $key => $arr) $insert_arr[$key]=rtrim($arr, ',');
+            
+        return $insert_arr;
+    }
+
+    protected function createUpdate($fields, $files, $except){
+        $update ='';
+
+        if($fields){
+            foreach($fields as $row => $value){
+                if($except && in_array($row, $except))continue;
+                $update .= $row . '=';
+
+                if(in_array($value,$this->sqlFunc)){
+                    $update .= $value . ',';
+                }else{
+                    $update .= "'" . addslashes($value) . "',";
+                }
+
+            }
+        }
+        if(isset($files)&&$files){
+            //$row - название поля/ $file - значение
+            foreach($files as $row=>$file){
+                $update .= $row . '=';
+                
+                
+                //для галереи изображений используем формат JSON, для хранения массива в базе данных 
+                if(is_array($file)) $update .= "'". addslashes(json_encode($file))."',";
+                
+                else $update .="'" . addslashes($file) . "',";
+            }
+        }
+        return rtrim($update, ',');
+        }
     
 }

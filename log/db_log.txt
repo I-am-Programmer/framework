@@ -121,3 +121,95 @@ Fault: 14-08-2024 12:19:40 - Ошибка в SQL запросе: SELECT teachers
 file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
 In Line 30
 
+Fault: 15-08-2024 13:07:26 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id AS j_id,join_table1.name AS j_name,join_table2.id AS j2_id,join_table2.name2 AS j2_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id LEFT JOIN join_table2 ON join_table1.id=join_table2.parent_id WHERE join_table2.name ='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'im.join_table1' doesn't exist
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 17:53:36 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gelery_img,img) VALUES (Katya,hello,'[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg')) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 17:54:04 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gelery_img,img) VALUES (Katya,hello,'[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg')) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 17:54:39 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gelery_img,img) VALUES (Katya,hello,'[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg') - 1054 Unknown column 'Katya' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:02:10 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gelery_img,img) VALUES (Masha,hello,'[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg') - 1054 Unknown column 'Masha' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:03:20 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gelery_img,img) VALUES (Masha,hello,'[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg') - 1054 Unknown column 'Masha' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:05:46 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES (Masha,hello,'[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg') - 1054 Unknown column 'Masha' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:09:30 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES ('Masha','hello','[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:37:53 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES ('Masha','hello','[\"\'red.jpg\'\",\"\'blue.jpg\'\",\"\'black.jpg\'\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:42:50 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES ('Masha','hello','[\"red.jpg\",\"blue.jpg\",\"black.jpg\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:43:26 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES ('Masha','hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 18:58:51 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES ('Masha','hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 19:23:33 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,galery_img,img) VALUES ('Masha','hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 16-08-2024 19:26:48 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gallery_img,img) VALUES ('Masha','hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]''main_img.jpg') - 1136 Column count doesn't match value count at row 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 17-08-2024 17:24:28 - Ошибка в SQL запросе: INSERT INTO teachers (content,gallery_img,img) VALUES ('hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 17-08-2024 17:24:41 - Ошибка в SQL запросе: INSERT INTO teachers (content,gallery_img,img) VALUES ('hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 17-08-2024 18:16:54 - Ошибка в SQL запросе: INSERT INTO teachers (content,gallery_img,img) VALUES ('hello','[\"red.\'\'jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 19-08-2024 0:13:11 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,) VALUES ('Katya','hello Katya',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ('Katya','hello Katya',)' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 19-08-2024 0:42:48 - Ошибка в SQL запросе: INSERT INTO teachers (0) VALUES ('MASHA') - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES ('MASHA')' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 20-08-2024 12:53:56 - Ошибка в SQL запросе: UPDATE teachers SET galery_img='[\"newred.\'\'jpg\"]'  - 1054 Unknown column 'galery_img' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 22-08-2024 11:28:22 - Ошибка в SQL запросе: UPDATE teachers SET name='дыдыд',content='Bye',gallery_img='Masha.jpg',id='44'  - 1062 Duplicate entry '44' for key 'PRIMARY'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 22-08-2024 11:43:07 - Ошибка в SQL запросе: UPDATE teachers SET name='ddddd',dddd='CoddddddntentOlya',gallery_img='[\"olya.jpg\"]',img='[\"Main_Olya.jpg\"]' WHERE id=Array - 1054 Unknown column 'Array' in 'where clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 22-08-2024 11:44:27 - Ошибка в SQL запросе: UPDATE teachers SET name='ddddd',dddd='CoddddddntentOlya',gallery_img='[\"olya.jpg\"]',img='[\"Main_Olya.jpg\"]' WHERE id ='43' AND 0 ='44'  - 1054 Unknown column 'dddd' in 'field list'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+

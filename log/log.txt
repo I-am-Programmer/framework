@@ -286,3 +286,99 @@ Stack trace:
 file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
 In Line 41
 
+Fault: 31-08-2024 9:20:45 - ReflectionException: Class "core\admin\controller\ShowController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:23:42 - ReflectionException: Class "core\admin\controller\ShowController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:34:36 - ReflectionException: Class "core\admin\controller\ShowController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:35:43 - ReflectionException: Class "core\admin\controller\ShowController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:37:00 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:58:54 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:59:00 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 31-08-2024 9:59:23 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 01-09-2024 15:17:17 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 01-09-2024 15:17:17 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 01-09-2024 15:17:20 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 01-09-2024 15:17:34 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/XAMPP/xamppfiles/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+

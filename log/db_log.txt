@@ -213,3 +213,59 @@ Fault: 22-08-2024 11:44:27 - Ошибка в SQL запросе: UPDATE teachers
 file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
 In Line 32
 
+Fault: 30-08-2024 20:39:22 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 30-08-2024 20:39:26 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 30-08-2024 21:12:17 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 30-08-2024 21:19:03 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 32
+
+Fault: 30-08-2024 21:26:41 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:28:39 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:29:01 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:29:37 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:29:48 - Ошибка в SQL запросе: DELETE teachers1, students1, teach_stud FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id LEFT JOIN teach_stud ON students1.teacher=teach_stud.student AND students1.name ='3'  - 1054 Unknown column 'students1.teacher' in 'on clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:31:20 - Ошибка в SQL запросе: UPDATE teachers1 SET name=NULL  WHERE teachers1.name IN ('Olya','Sveta') OR teachers1.surname LIKE 'Sergeevna%' AND teachers1.secondname <>'Rodionova' AND teachers1.car ='Porshe'  - 1054 Unknown column 'teachers1.surname' in 'where clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:31:21 - Ошибка в SQL запросе: UPDATE teachers1 SET name=NULL  WHERE teachers1.name IN ('Olya','Sveta') OR teachers1.surname LIKE 'Sergeevna%' AND teachers1.secondname <>'Rodionova' AND teachers1.car ='Porshe'  - 1054 Unknown column 'teachers1.surname' in 'where clause'
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:31:51 - Ошибка в SQL запросе: UPDATE teachers1 SET 0='id',1='name' WHERE name IN ('Olya','Sveta') OR surname LIKE 'Sergeevna%' AND secondname <>'Rodionova' AND car ='Porshe'  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0='id',1='name' WHERE name IN ('Olya','Sveta') OR surname LIKE 'Sergeevna%' A...' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:32:32 - Ошибка в SQL запросе: INSERT INTO teachers1 (0,1) VALUES ('id','name') - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0,1) VALUES ('id','name')' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 30-08-2024 21:32:46 - Ошибка в SQL запросе: INSERT INTO teachers1 (0) VALUES ('name') - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES ('name')' at line 1
+file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+

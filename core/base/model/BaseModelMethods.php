@@ -63,7 +63,7 @@ abstract class BaseModelMethods{
         $table = $table ? $table . '.': '';
 
         $where = '';
-        //если передано where
+        //если передано where то выполняем его формирование иначе вернется пустая строка
         //если передан операнд, иначе он ['='] по умолчанию
         if(isset($set['where'])&& !empty($set['where']) && is_array($set['where'])){ 
             $set['operand'] = isset($set['operand'])&&!empty($set['operand'])&&is_array($set['operand'])
@@ -71,7 +71,7 @@ abstract class BaseModelMethods{
 
             $set['condition'] = isset($set['condition'])&&!empty($set['condition'])&&is_array($set['condition'])
             ?$set['condition']:['AND'];
-            //таким образом мы имеем возможность пропустить where, Если оно не пришло. или подставаи нужное знаечение, если пришло
+            //таким образом мы имеем возможность подставаи нужное знаечение вместо WHERE, если пришла $instruction
             $where = $instruction;
 
             //счетчики operand и condition
@@ -155,6 +155,7 @@ abstract class BaseModelMethods{
         $fields = '';
         $join = '';
         $where = '';
+        $tables = '';
 
         if(isset($set['join'])&& $set['join']){
             $join_table = $table;
@@ -167,7 +168,7 @@ abstract class BaseModelMethods{
                     //если есть, то меняем значение ключа на значение в 'table'
                     else $key = $item['table'];
                 }
-                // если в переменной join что то есть, то добавляем пробел для следующего джоина
+                // если в переменной join что то есть, то добавляем пробел для следующего джоина(так как мы работаем в цикле переменная не перезатирается)
                 if($join) $join .= ' ';
                 //если отсутствует 'on' то не выполняем, цикл прокрутится
                 if($item['on']){
@@ -195,8 +196,8 @@ abstract class BaseModelMethods{
                             continue 2;
                             break;
                     }
-                    
-                    if(!$item['type']) $join .= 'LEFT JOIN ';
+                    //если нет типа соединения, то по умолчанию используем LEFT JOIN
+                    if(!isset($item['type']) || empty($item['type'])) $join .= 'LEFT JOIN ';
                     else $join .= trim(strtoupper($item['type'])) . ' JOIN ';
 
                     $join .= $key . ' ON ';
@@ -208,8 +209,10 @@ abstract class BaseModelMethods{
                     // формируем join
                     $join .= '.' . $join_fields[0] . '=' . $key . '.' . $join_fields[1];
 
+                    //сохраняем название текущей таблицы в $join_table
                     $join_table = $key;
-                    //проверяем есть ли уже что то в переменной where,
+                    $tables .= ', ' . trim($join_table);
+                    //создание where (если есть в join)- проверяем есть ли уже что то в переменной where,
                     //если нет то начинаем строку с WHERE иначе используя group_condition=AND, OR, для соединения WHERE
                     if($new_where){
                         if(isset($item['where'])&&$item['where']){
@@ -226,7 +229,7 @@ abstract class BaseModelMethods{
                 
             }
         }
-        return compact('fields', 'join', 'where');
+        return compact('fields', 'join', 'where', 'tables');
     }
     protected function createInsert($fields, $files, $except){
         
@@ -288,6 +291,8 @@ abstract class BaseModelMethods{
 
                 if(in_array($value,$this->sqlFunc)){
                     $update .= $value . ',';
+                }elseif($value === NULL){
+                    $update .= "NULL ,";
                 }else{
                     $update .= "'" . addslashes($value) . "',";
                 }

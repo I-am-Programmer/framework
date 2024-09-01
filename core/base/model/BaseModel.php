@@ -24,6 +24,7 @@ class BaseModel extends BaseModelMethods{
 
 
     // string $crud= c - CREATE/ r - SELECT / u - UPDATE / d - DELETE  
+    //подключаем mysqli_sql_exception для отлавливания проблем с БД
     final public function query($query, $crud ='r', $return_id = false){
         try{
                 $result = $this->db->query($query);
@@ -33,7 +34,8 @@ class BaseModel extends BaseModelMethods{
             . $query .  ' - ' . $this->db->errno . ' ' . $this->db->error
             );
         }
-       
+       // сформировав звапрос с помощью crud определяем что с ним делать дальше
+
         switch ($crud){
             case 'r':
                 //если количество строк ответа SQL не равно 0
@@ -53,13 +55,13 @@ class BaseModel extends BaseModelMethods{
                 break;
             case 'c':
                 if(isset($return_id)&& ($return_id)) return $this->db->insert_id;
-                exit ($query);
-                // return true;
+                echo($query);
+                return true;
                 break;
                 
             case 'u':
-                exit ($query);
-                // return true;
+                echo($query);
+                return true;
                 break;
 
             default:
@@ -74,41 +76,39 @@ class BaseModel extends BaseModelMethods{
         
         
     }
-    // $res = $db->read($table,[
-    //     'fields' => ['id', 'name'],
-    //     'where' => ['name'=> 'Olya, Sveta', 'surname'=> 'Sergeevna','secondname'=> 'Rodionova', 'car'=>'Porshe'],
-    //     'operand' => ['IN','LIKE%','<>', '='],
-    //     'condition' => ['OR', 'AND'],
-    //     'order' => ['fio', 'name'],
-    //     'order_direction' => ['DESC'],
-    //     'limit' => '1',
-    //     'join'=> [
-    //         'join_table1'=>[
-    //             'table'=> 'join_table',
-    //             'fields'=> ['id as j_id', 'name as j_name'],
-    //             'type' => 'left',
-    //             'where' => ['name'=>'Sasha'],
-    //             'operand' => ['='],
-    //             'condition' => ['OR'],
-    //             'on' =>['id', 'parent_id'],
-    //             'group_condition => 'AND'
-    //             ],
+    //      @param array $set
+    //     $res = $db->read($table,[
+        // 'fields' => ['id', 'name'],
+        // 'operand' => ['%LIKE%','<>'],
+        // // 'condition' => ['OR', 'AND'],
+        // 'order' => ['name'],
+        // 'order_direction' => ['DESC'],
+        // 'limit' => '1',
+        // 'join'=> [
+        //     'join_table1'=>[
+        //         'table'=> 'join_table1',
+        //         'fields'=> ['id AS j_id', 'name AS j_name'],
+        //         'type' => 'left',
 
-    //             ['join_table2'=>[
-    //             'table'=> 'join_table2',
-    //             'fields'=> ['id as j2_id', 'name2 as j2_name'],
-    //             'type' => 'left',
-    //             'where' => ['name'=>'Sasha'],
-    //             'operand' => ['='],
-    //             'condition' => ['OR'],
-    //             'on' =>[
-    //                 'table' => 'teachers',
-    //                 'fields' => ['id', 'parent_id']
-    //                     ]
-    //                 ]
-    //             ]
-    //         ]
-    //     ]);
+        //         'operand' => ['='],
+        //         'condition' => ['OR'],
+        //         //признак присоеднинения
+        //         'on' =>[
+        //             'table' => 'teachers',
+        //             'fields' => ['id', 'parent_id']
+        //         ]
+        //         ],
+        //         [
+        //         'table'=> 'join_table2',
+        //         'fields'=> ['id AS j2_id', 'name2 AS j2_name'],
+        //         'type' => 'left',
+        //         'where' => ['name'=>'Sasha'],
+        //             'operand' => ['='],
+        //             'condition' => ['OR'],
+        //         'on' =>['id', 'parent_id']
+        //         ]
+        //     ]
+        // ]);
     // final` означает, что метод нельзя переопределить в наследниках этого класса
     final public function read($table, $set=[]){
         $fields = $this->createFields($set,$table);
@@ -133,7 +133,7 @@ class BaseModel extends BaseModelMethods{
     }
 
     /**
-     * @param $table - таблица для вставки данных
+     
      * @param array $set - массив параметров:
      * fields => [поле => значение]; - если не указан, то обрабатывается $_POST[поле => значение]
      * разрешена передача NOW() в качестве MySql функции обычной строкой
@@ -166,6 +166,7 @@ class BaseModel extends BaseModelMethods{
         return false;
         
     }
+    // @param array $set
     // all_rows - использкется в значении true для перезаписи всехстолбцов в таблице
     // fields => [поле => значение]; - если не указан, то обрабатывается $_POST[поле => значение]
     // files => [поле => значение]; - можно подать массив вида [поле => [массив значений]]. Для хранения файлов изображений
@@ -189,7 +190,7 @@ class BaseModel extends BaseModelMethods{
         // Изменение записи в определенных строках можно записать в двух видах. Пример:
         // 'fields' =>'id'=>44 или 'where' => ['id'=> 44]
         // для нескольких id использеем массив типа 'where' => ['id'=> [43, 44]]
-        if(!isset($set['all_rows']) || !$set['all_rows']){
+        if(!isset($set['all_rows']) || empty($set['all_rows'])){
             //
             if(isset($set['where']) && $set['where']){
                 $where = $this->createWhere($set);
@@ -215,6 +216,75 @@ class BaseModel extends BaseModelMethods{
         return $this->query($query, 'u');
     }
     
+    //      @param array $set
+    //     'fields' => ['id', 'name'],
+    //     'where' => ['name'=> 'Olya, Sveta', 'surname'=> 'Sergeevna','secondname'=> 'Rodionova', 'car'=>'Porshe'],
+    //     'operand' => ['IN','LIKE%','<>', '='],
+    //     'condition' => ['OR', 'AND'],
+    //     'join'=> [
+    //         'join_table1'=>[
+    //             'table'=> 'join_table',
+    //             'fields'=> ['id as j_id', 'name as j_name'],
+    //             'type' => 'left',
+    //             'where' => ['name'=>'Sasha'],
+    //             'operand' => ['='],
+    //             'condition' => ['OR'],
+    //             'on' =>['id', 'parent_id'],
+    //             'group_condition => 'AND'
+    //             ],
+
+    //             ['join_table2'=>[
+    //             'table'=> 'join_table2',
+    //             'fields'=> ['id as j2_id', 'name2 as j2_name'],
+    //             'type' => 'left',
+    //             'where' => ['name'=>'Sasha'],
+    //             'operand' => ['='],
+    //             'condition' => ['OR'],
+    //             'on' =>[
+    //                 'table' => 'teachers',
+    //                 'fields' => ['id', 'parent_id']
+    //                     ]
+    //                 ]
+    //             ]
+    //         ]
+    //     ]);
+    final public function delete($table, $set){
+        $table = trim($table);
+        $where = $this->createWhere($set, $table);
+        $columns = $this->showColumns($table);
+        if(!$columns) return false;
+        //если передаем поле fields то удаляем только столбцы из значения fields
+        if(isset($set['fields'])&&is_array($set['fields'])&& !empty($set['fields'])){
+            if($columns['id_row']){
+                $key = array_search($columns['id_row'], $set['fields']);
+                if ($key !== false) unset($set['fields'][$key]);
+        };
+        $fields = [];
+
+        foreach($set['fields'] as $field){
+            $fields[$field] = $columns[$field]['Default'];
+        }
+        $update = $this->createUpdate($fields, false, false);
+        $query = "UPDATE $table SET $update $where";
+
+    //fields отсутствует, значит полностью удаляем запись из таблицы
+    }else{
+        $join_arr = $this->createJoin($set, $table);
+        $join = $join_arr['join'];
+        $join_tables = $join_arr['tables'];
+
+        //если в join пришлае  where то создаем либо новую where либо добавляем к существующей(если такая есть)
+        if(isset($join_arr['where'])&&!empty($join_arr['where'])){
+            $where = isset($where) ? $where .= $join_arr['where'] : $join_arr['where'];
+        }
+        //формируем строку вида 
+        //DELETE teachers1, students1 FROM teachers1 LEFT JOIN students1 ON teachers1.student_id=students1.id WHERE teachers1.id ='15'
+        $query = 'DELETE ' . $table . $join_tables . ' FROM ' . $table . ' ' . $join . ' ' . $where;
+
+    }
+    return $this->query($query,'u'); 
+    
+}
     //$columns => id_row = "id" хранится наименования первичного ключа "id" в нашей таблице
     final public function showColumns($table){
 

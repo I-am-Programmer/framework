@@ -32,7 +32,7 @@ use core\base\controller\Singletone;
 
 // Для отлавливания исключения, нам необходимо создать соответствующий класс дочерний от \Exception
 try{
-    //запуск всего кода
+    //запуск всего кода создание выполняется код из RoutController после BaseController(родителя) посредством вызова у него route
    RouteController::instance()->route();
    
 }

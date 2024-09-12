@@ -3,7 +3,7 @@ php_flag magic_qoutea_gpc Off
 
 AddDefaultCharset utf-8
 
-# Чтобы сервер apache искаль только index.php чтобы он не искал index.htm и index.html(Строка не обязательна, но убирает лишнюю нагрузку с сервера)
+# Чтобы сервер apache искал только index.php чтобы он не искал index.htm и index.html(Строка не обязательна, но убирает лишнюю нагрузку с сервера)
 
 DirectoryIndex index.php
 

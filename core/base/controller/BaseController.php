@@ -4,6 +4,7 @@ namespace core\base\controller;
 use core\base\exceptions\RouteException;
 use core\base\settings\Settings;
 
+//все наши контроллеры будут наследоваться от базового контроллера 
 abstract class BaseController
 {
     //Добавляем пространство имен трейта(можно обращаться к свойствам и методам через $this->method())

@@ -287,15 +287,17 @@ class BaseModel extends BaseModelMethods{
 }
     //$columns => id_row = "id" хранится наименования первичного ключа "id" в нашей таблице
     final public function showColumns($table){
-
+        //запрашиваем колонки у нашей БД
         $query = "SHOW COLUMNS FROM $table";
         $res =$this->query($query);
 
         $columns = [];
 
+        //Переводим из нумерованного массива к виду асоциативного массива и записываем все в $columns 
         if($res){
         foreach($res as $row){
             $columns[$row['Field']] = $row;
+            //если это первичный ключ то записываем его в id_row
             if($row['Key']=== 'PRI') $columns['id_row'] = $row['Field'];
             }
         }

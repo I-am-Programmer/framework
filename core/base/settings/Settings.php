@@ -54,7 +54,7 @@ class Settings
         'key'=>'value'
     ];
 
-    private $defaultTable = 'teacher';
+    private $defaultTable = 'test1';
 
 
 
@@ -103,22 +103,21 @@ class Settings
             return $baseProperties;
     }
 
+    //склеиватель массивов
     public function arrayMergeRecursive(){
         $arrays = func_get_args();
         $base = array_shift($arrays);
         foreach ($arrays as $array){
             foreach($array as $key => $value){
-//идем по массиву ShopSettings рекурсивно 
+            //идем по массиву ShopSettings рекурсивно 
             if (is_array($value) && isset($base[$key]) &&is_array($base[$key])){ 
                     $base[$key] = $this->arrayMergeRecursive($base[$key], $value);
                 }else{   
                     if(is_int($key)){
-// при отсутсвии в базовом массиве нашего значения, добавляем его
+                        // при отсутсвии в базовом массиве нашего значения, добавляем его
                         if(!in_array($value, $base)) array_push($base, $value);
                         continue;
-                    }
-    // в случае если строка, заменяем базовое значение на значение плагина
-    // при отсутствии значения так же добавляем его в плагин 
+                    } 
                     $base[$key] = $value;
                 }
 

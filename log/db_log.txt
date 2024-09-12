@@ -305,3 +305,19 @@ Fault: 07-09-2024 14:20:56 - Ошибка в SQL запросе: SHOW COLUMNS FR
 file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
 In Line 33
 
+Fault: 07-09-2024 20:23:09 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 11-09-2024 14:53:48 - Ошибка в SQL запросе: SELECT test1.id as id,test1.img_lalalala as img,test1.test_name as name,test1.content,test1.parent_id FROM test1   ORDER BY test1.parent_id ASC  - 1054 Unknown column 'test1.content' in 'field list'
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 11-09-2024 17:42:06 - Ошибка в SQL запросе: SELECT test1.id as id,test1.img_lalalala as img,test1.test_name as name,test1.content,test1.parent_id FROM test1   ORDER BY test1.parent_id ASC,test1.menu_position ASC  - 1054 Unknown column 'test1.menu_position' in 'order clause'
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 11-09-2024 17:51:41 - Ошибка в SQL запросе: SELECT test1.id as id,test1.img_lalalala as img,test1.test_name as name,test1.content,test1.parent_id FROM test1   ORDER BY test1.parent_id ASC,test1.menu_position ASC  - 1054 Unknown column 'test1.menu_position' in 'order clause'
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+

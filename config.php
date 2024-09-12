@@ -11,6 +11,6 @@ const PATH = '/';
 // Подключение к базе данных хост, пользователь, пароль, имя баз данных
 const HOST = 'localhost';
 const USER = 'root';
-const PASSWD = '';
+const PASSWD = 'root';
 const DB_NAME = 'im';
 

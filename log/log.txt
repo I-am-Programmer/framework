@@ -382,3 +382,1055 @@ Stack trace:
 file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/controller/BaseController.php
 In Line 41
 
+Fault: 04-09-2024 21:30:44 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 04-09-2024 21:31:21 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 04-09-2024 21:51:55 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 04-09-2024 21:53:59 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 04-09-2024 21:54:15 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 04-09-2024 21:58:18 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 04-09-2024 22:03:03 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:00:54 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:06:12 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:06:18 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:11:10 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:11:14 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:14:58 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:15:02 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:15:30 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:15:31 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:15:35 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:19:34 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:20:07 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:26:35 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:27:20 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:27:31 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:27:39 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:34:15 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:34:15 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 11:44:00 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 11:44:11 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 12:12:34 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:12:46 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:15:02 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:20:03 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:20:56 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:23:06 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:27:24 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:27:44 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:27:51 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:29:02 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:32:03 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 12:32:10 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 12:32:17 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 12:32:22 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 12:32:27 - Не корректная дирректория сайта
+file/Applications/MAMP/htdocs/framework/core/base/controller/RouteController.php
+In Line 123
+
+Fault: 05-09-2024 12:36:14 - Нет такого файла для подключения - core/user/controller/FrameworkController
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 05-09-2024 12:36:17 - Нет такого файла для подключения - core/user/controller/FrameworkController
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 05-09-2024 12:36:22 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:38:02 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:39:29 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:39:35 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:39:41 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:39:47 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:41:41 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:41:44 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:41:44 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:42:27 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:42:27 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:18 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:19 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:29 - ReflectionException: Class "core\user\controller\Admin.Controller" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:31 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:36 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:37 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:39 - Нет такого файла для подключения - core/admin/controller/ScController
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 05-09-2024 12:44:45 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:44:46 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:02 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:02 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:02 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:02 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:05 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:05 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:05 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:14 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:45:17 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:46:32 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:46:42 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:47:00 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:48:19 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:48:19 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:48:52 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:49:10 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:49:13 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:56:03 - Нет такого файла для подключения - core/user/controller/FrameworkController
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 05-09-2024 12:56:07 - Нет такого файла для подключения - core/user/controller/FrameworkController
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 05-09-2024 12:56:11 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:57:17 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 12:57:18 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 13:08:20 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 13:53:20 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 13:57:52 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 13:57:55 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 14:00:40 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:25:25 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:25:33 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:25:36 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:26:26 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:29:22 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:29:40 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:30:20 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:30:48 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 15:32:22 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:27:58 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:28:03 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:28:21 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:28:22 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:28:29 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:32:27 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:37:15 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:38:47 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 05-09-2024 20:38:48 - ReflectionException: Method core\admin\controller\ShowController::request() does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(29): ReflectionMethod->__construct('core\\admin\\cont...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 41
+
+Fault: 06-09-2024 18:57:42 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:05:36 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:13:18 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:13:18 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:14:49 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:19 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:35 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:39 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:40 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:40 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:41 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:36:41 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 19:52:19 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 20:04:48 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 20:27:09 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:19:09 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:22 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:29 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:36 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:37 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:39 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:44 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:44 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:20:45 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:22:40 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:22:47 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:23:20 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:23:25 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:26:10 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:27:51 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:27:55 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:27:55 - Нет такого файла для подключения - core/admin/controller/Model
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 06-09-2024 22:37:53 - Нет такого файла для подключения - core/admin/controller/Settings
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 07-09-2024 14:20:36 - Не найдены поля в таблице - 
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 55
+
+Fault: 07-09-2024 14:20:56 - Не найдены поля в таблице - 
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 55
+
+Fault: 07-09-2024 14:21:24 - Не найдены поля в таблице - 
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 55
+
+Fault: 07-09-2024 14:23:14 - Не найдены поля в таблице - 
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 55
+
+Fault: 07-09-2024 14:28:46 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 56
+
+Fault: 07-09-2024 16:33:32 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:33:34 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:33:39 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:36:41 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:36:57 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:37:46 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:37:55 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:38:38 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:38:53 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:38:58 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:39:18 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:42:06 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:43:57 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:43:58 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:44:00 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:44:01 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:44:02 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:44:03 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:44:09 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+
+Fault: 07-09-2024 16:44:14 - Не найдены поля в таблице - teacher
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 57
+

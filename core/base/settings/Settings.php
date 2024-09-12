@@ -50,7 +50,11 @@ class Settings
 
     
 
-    
+    private $projectTables =[
+        'key'=>'value'
+    ];
+
+    private $defaultTable = 'teacher';
 
 
 
@@ -58,6 +62,7 @@ class Settings
     
 
     static public function get ($property){
+
         return self::instance()->$property;
 
     }
@@ -124,5 +129,7 @@ class Settings
     }
     
 }
+
+
 
 

@@ -269,3 +269,39 @@ Fault: 30-08-2024 21:32:46 - Ошибка в SQL запросе: INSERT INTO tea
 file/Applications/XAMPP/xamppfiles/htdocs/framework/core/base/model/BaseModel.php
 In Line 33
 
+Fault: 06-09-2024 22:33:56 - Ошибка подключения к базе данных: Access denied for user 'root'@'localhost' (using password: NO)
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 20
+
+Fault: 07-09-2024 13:31:08 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 13:31:39 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 13:35:27 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 13:36:27 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 13:57:44 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 13:58:30 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 14:20:43 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+
+Fault: 07-09-2024 14:20:56 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+

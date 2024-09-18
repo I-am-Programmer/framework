@@ -68,67 +68,27 @@ abstract class BaseAdmin extends BaseController{
     }
 
 
-    
-    protected function createData($arr = [], $add = true){
-    $fields = [];
-    $order = [];
-    $order_direction = [];
-    
-    if($add){
-        if(!$this->columns['id_row'])return $this->data = [];
-        // Как бы не назывался наш приватный ключ, записываем его как id
-        $fields[] = $this->columns['id_row'] . ' as id';
-        if(isset($this->columns['name'])) $fields['name'] = 'name';
-        if(isset($this->columns['img'])) $fields['img'] = 'img';
+    protected function expansion($args = []){
+        // разделяем строку на массв по разделителю _
+        $this->table = 'test_my';
+        $filename = explode('_',$this->table);
+        $className = '';
 
-        //если name или img не пришли. Проверяем есть ли столбец содержащий name или столбец начинающийся с img. Если есть записываем в fields как name или img
-                if(count($fields)<3){
-            foreach($this->columns as $key => $item){
-                if(!isset($fields['name']) && strpos($key, 'name')!==false){
-                    $fields['name'] = $key . ' as name';
-                }
-                if(!isset($fields['img']) && strpos($key, 'img')===0){
-                    $fields['img'] = $key . ' as img';
-                }
-            }
+        //записываем в $className наименование таблицы с больших букв. В формате TestMy
+        foreach($filename as $item) $className .= ucfirst($item);
+        
+        // получаем строку вида "core/admin/expansion/TestMyExpansion"
+        $class = Settings::get('expansion') . $className . 'Expansion';
+        //если читабелен файл. По полному пути -"/Applications/MAMP/htdocs/framework/core/admin/expansion/TestMyExpansion.php"
+        $a = $_SERVER['DOCUMENT_ROOT'] . PATH. $class . '.php';
+        if(is_readable($_SERVER['DOCUMENT_ROOT'] . PATH. $class . '.php')){
+            $class = str_replace('/', '\\', $class);
+            //формируем доступ к классу через сингллтон(для экономии памяти)
+            $exp = $class::instance();
+            $res = $exp->expansion($this);
+        }else{
+            exit('нет такого расширения');
         }
-        //если пришел $arr то мы должны склеить его с текущим массивом
-        if(isset($arr['fields']) && $arr['fields']){
-            $fields = Settings::instance()->arrayMergeRecursive($fields, $arr['fields']);
-        }
-        //если в таблице есть table_id а в $fields нету, то добавляем его туда 
-        if(isset($this->columns['parent_id']) && $this->columns['parent_id']){
-            if(!in_array('parent_id', $fields)) $fields[] = 'parent_id';
-            $order[] = 'parent_id';
-        }
-        if(isset($this->columns['menu_position'])&&$this->columns['menu_position'])$order[] = 'menu_position';
-        elseif(isset($this->columns['date'])&& $this->columns['date']){
-            if($order) $order_direction = ['ASC','DESC'];
-            else $order_direction[]=['DESC'];
-
-            $order[] = 'date';
-        }
-        if(isset($arr['order'])&& $arr['order']){
-            $order = Settings::instace()->arrayMergeRecutsive($order, $arr['order']);
-        }
-        if(isset($arr['order_dirrection'])&& $arr['order_dirrection']){
-            $order_dirrection = Settings::instace()->arrayMergeRecutsive($order_dirrection, $arr['order_dirrection']);
-        }
-    }else{
-        //если мы не передали массив и $add =false то возвращаем пустую data
-        if(!$arr)return $this->data = [];
-        // если не добавление а получение нового результата
-        $fields = isset($arr['fields'])? $arr['fields']: null;
-        $order = isset($arr['order'])? $arr['order'] : null;
-        $order_direction = isset($arr['order_direction'])?$arr['order_direction'] : null;
-    }
-
-
-    $this->data = $this->model->read($this->table,[
-        'fields'=> $fields,
-        'order'=> $order,
-        'order_direction'=>$order_direction
-    ]);
 
     }
 

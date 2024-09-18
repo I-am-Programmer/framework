@@ -5,7 +5,7 @@ namespace core\base\settings;
 use core\base\settings\Settings;
 use core\base\controller\Singletone;
 
-//скрываем проблемы связанные с динамическим свойствами
+//скрываем проблемы связанные с динамическим свойствами(для php начиная с 8.2 )
 #[\AllowDynamicProperties]
 class ShopSettings{
     use Singletone;

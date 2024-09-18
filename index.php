@@ -27,7 +27,7 @@ require_once 'libraries/functions.php';
 use core\base\exceptions\RouteException;  
 use core\base\exceptions\DbException;  
 use core\base\controller\RouteController;  
-use core\base\controller\Singletone;  
+use core\base\controller\Singleton;  
 
 
 // Для отлавливания исключения, нам необходимо создать соответствующий класс дочерний от \Exception

@@ -1526,3 +1526,103 @@ Fault: 10-09-2024 13:27:37 - Не найдены поля в таблице - te
 file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
 In Line 66
 
+Fault: 13-09-2024 15:17:09 - ReflectionException: Class "core\user\controller\Apple-touch-icon-precomposed.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:30
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(30): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 42
+
+Fault: 13-09-2024 15:17:09 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:30
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(30): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 42
+
+Fault: 13-09-2024 15:18:59 - Не найдено поле id в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 15:19:27 - Не найдено поле id в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 15:19:32 - Не найдено поле id в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 15:19:36 - Не найдено поле id в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 15:19:41 - Не найдено поле id в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 15:20:00 - Не найдено поле id в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 15:22:13 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:03:52 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:05:21 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:05:59 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:06:11 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:16:06 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:16:17 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:17:28 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 13-09-2024 16:24:42 - Не найдено поле id_row в таблице - test1
+file/Applications/MAMP/htdocs/framework/core/admin/controller/BaseAdmin.php
+In Line 80
+
+Fault: 14-09-2024 22:40:48 - Нет такого файла для подключения - core/base/controller/Singletone
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 14-09-2024 22:41:38 - Нет такого файла для подключения - core/base/controller/Singletone
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 14-09-2024 22:47:52 - Нет такого файла для подключения - TestMy
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+
+Fault: 18-09-2024 12:12:01 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:30
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(30): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+file/Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php
+In Line 42
+
+Fault: 18-09-2024 12:12:22 - Нет такого файла для подключения - core/admin/expansion/BaseAdmin
+file/Applications/MAMP/htdocs/framework/core/base/settings/internal_settings.php
+In Line 44
+

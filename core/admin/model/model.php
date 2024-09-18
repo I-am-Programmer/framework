@@ -1,10 +1,16 @@
 <?php
 
-namespace core\admin\model;
+namespace core\admin\Model;
 
 use core\base\model\BaseModel;
+use core\base\controller\Singleton;
 
-class Model extends BaseModel{
-
+class Model extends BaseModel
+{
+    use Singleton;
+    // private function __construct(){
+    //     $this->connect();
+    // }
+    
     
 }

@@ -28,6 +28,7 @@ public function __construct($message ='',$code = 0)
     // if(isset($this->messages[$this->getCode()])) $this->message = $this->messages[$this->getCode()];
 
     $this->writeLog($error);
+    $this->writeLog($message, 'message_log');
 }   
 
 }

@@ -4,7 +4,7 @@ namespace core\base\controller;
 
 use core\base\exceptions\RouteException;
 use core\base\settings\Settings;
-use core\base\controller\Singletone;
+use core\base\controller\singleton;
 
 
 
@@ -12,7 +12,7 @@ use core\base\controller\Singletone;
 // При попытке создать объект повторно будет ссылаться на уже созданный объект 
 class RouteController extends BaseController {
     
-    use Singletone;
+    use singleton;
     
     protected $routes;
 
@@ -21,14 +21,19 @@ class RouteController extends BaseController {
         
         $address_str = $_SERVER['REQUEST_URI'];
         
-        //если запрос заканчивается на / вызываем метод redirect
-        if((strrpos($address_str, '/') === strlen($address_str) -1) && (strrpos($address_str, '/') !== 0)){
-                  
-            $this->redirect(rtrim($address_str, '/'), 301);
-        }
+        
         //проверяем что фреймворк расположен в нужной папке === константе PATH// Иначе вызываем исключение
         $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php'));
         if($path === PATH){
+            // если запрос заканчивается на / вызываем метод redirect
+            // если это PATH (то подключается index.php редирект не нужен)
+            $strrpos = strrpos($address_str,  '/');
+            $strlen = (strlen(PATH) -1);
+
+            if((strrpos($address_str, '/') === strlen($address_str) -1) && (strrpos($address_str, '/') !== (strlen(PATH) -1))){ 
+                $this->redirect(rtrim($address_str, '/'), 301);
+            }
+
             $this->routes = Settings::get('routes');
             if(!$this->routes)throw new RouteException('Отсутствуют маршруты в базовых настройках');
             //разбиваем полученную строку на массив

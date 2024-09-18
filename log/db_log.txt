@@ -321,3 +321,7 @@ Fault: 11-09-2024 17:51:41 - Ошибка в SQL запросе: SELECT test1.id
 file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
 In Line 33
 
+Fault: 13-09-2024 15:18:04 - Ошибка в SQL запросе: SELECT test1. as id,test1.img_lalalala as img,test1.test_name as name,test1.content,test1.something,test1.parent_id FROM test1   ORDER BY test1.parent_id ASC,test1.menu_position ASC  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as id,test1.img_lalalala as img,test1.test_name as name,test1.content,test1.some' at line 1
+file/Applications/MAMP/htdocs/framework/core/base/model/BaseModel.php
+In Line 33
+

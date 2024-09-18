@@ -2,11 +2,11 @@
 
 namespace core\base\settings;
 
-use core\base\controller\Singletone;
+use core\base\controller\Singleton;
 
 class Settings
 {
-    use Singletone;
+    use Singleton;
     
     
     private $templateArr = [
@@ -126,6 +126,8 @@ class Settings
  
         return $base;
     }
+
+    private $expansion = 'core/admin/expansion/';
     
 }
 

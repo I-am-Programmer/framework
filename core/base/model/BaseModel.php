@@ -2,16 +2,14 @@
 
 
 namespace core\base\model;
-use core\base\controller\Singletone;
+
 use core\base\exceptions\DbException;
-
-class BaseModel extends BaseModelMethods{
-
-    use Singletone;
+// Все модели настледуются от этого абстрактного класса. 
+abstract class BaseModel extends BaseModelMethods{
 
     protected $db;
 
-    private function __construct(){
+    protected function connect(){
         //выполняем проверку что подключение подключение к БД успешно, иначе заканчиваем выполнение 
         try{
             $this->db = @new \mysqli(HOST, USER, PASSWD, DB_NAME);

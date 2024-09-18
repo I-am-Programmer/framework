@@ -1,0 +1,15 @@
+Fault: 13-09-2024 16:05:59 - Не найдено поле id_row в таблице - test1
+Fault: 13-09-2024 16:06:11 - Не найдено поле id_row в таблице - test1
+Fault: 13-09-2024 16:16:06 - Не найдено поле id_row в таблице - test1
+Fault: 13-09-2024 16:16:17 - Не найдено поле id_row в таблице - test1
+Fault: 13-09-2024 16:17:28 - Не найдено поле id_row в таблице - test1
+Fault: 13-09-2024 16:24:42 - Не найдено поле id_row в таблице - test1
+Fault: 14-09-2024 22:40:48 - Нет такого файла для подключения - core/base/controller/Singletone
+Fault: 14-09-2024 22:41:38 - Нет такого файла для подключения - core/base/controller/Singletone
+Fault: 14-09-2024 22:47:54 - Нет такого файла для подключения - TestMy
+Fault: 18-09-2024 12:12:01 - ReflectionException: Class "core\user\controller\Apple-touch-icon.pngController" does not exist in /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php:30
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/core/base/controller/BaseController.php(30): ReflectionMethod->__construct('core\\user\\contr...', 'request')
+#1 /Applications/MAMP/htdocs/framework/index.php(36): core\base\controller\BaseController->route()
+#2 {main}
+Fault: 18-09-2024 12:12:22 - Нет такого файла для подключения - core/admin/expansion/BaseAdmin
